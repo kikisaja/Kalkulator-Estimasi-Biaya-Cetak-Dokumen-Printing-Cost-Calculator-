@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Cost Calculator 🖨️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">kikisaja No. 148</span>
+            <h1>🖨️ PRINTING COST CALCULATOR</h1>
+            <p>Hitung estimasi total biaya cetak dokumen tugas atau skripsimu!</p>
+        </header>
+
+        <!-- Form Input -->
+        <div class="calculator-form">
+            <div class="input-group">
+                <label for="input-pages">Jumlah Halaman:</label>
+                <input type="number" id="input-pages" placeholder="Contoh: 25" min="1" value="25">
+            </div>
+
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="select-color">Mode Cetak:</label>
+                    <select id="select-color">
+                        <option value="bw">Hitam Putih (B/W)</option>
+                        <option value="color">Full Warna (Color)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="select-paper">Jenis Kertas:</label>
+                    <select id="select-paper">
+                        <option value="hvs">HVS 70/80gsm</option>
+                        <option value="photo">Kertas Foto Glossy</option>
+                        <option value="cardstock">Karton / Linen</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" id="btn-calculate" class="btn-calculate">✨ HITUNG TOTAL BIAYA</button>
+        </div>
+
+        <!-- Result Box -->
+        <div class="result-box">
+            <div class="result-item">
+                <span class="result-label">Perkiraan Biaya Satuan</span>
+                <strong id="val-unit-price">Rp 500 / hal</strong>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label">Total Biaya Cetak</span>
+                <strong id="val-total-price">Rp 12.500</strong>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
